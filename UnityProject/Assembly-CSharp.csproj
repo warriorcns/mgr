@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{5B580621-09B4-68CB-B5F4-5B9DD210A60F}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>d:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>d:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\BallMovement.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Hand Types\FingerLineRender.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Hand Types\HandModel.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Hand Types\HandTypeBase.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Hand Types\HandTypeBasic.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Hand Types\HandTypeMultiple.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Hand Types\HandTypeRigged.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Leap Hand States\LeapGodHandState.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Leap Hand States\LeapNoHandState.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Leap Hand States\LeapShootableState.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Leap Hand States\LeapState.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Leap Hand States\LeapSwingableState.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Leap Hand\FingerDetection.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Leap Hand\RiggedHandTransforms.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Leap Hand\UnityHand.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Leap Hand\UnityHandSettings.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Leap Helpers\LeapHandController.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Leap Helpers\LeapInputEx.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Leap Helpers\LeapUnityExtensions.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Leap Objects\LeapBasicObject.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Leap Objects\LeapGameObject.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Leap Objects\LeapInactiveObject.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Leap Objects\LeapShootableObject.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Leap Objects\LeapSwingableObject.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Leap Objects\LeapThrowableObject.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Objects\ManageReturnables.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Objects\Returnable.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Objects\Triggers and Switches\ButtonTrigger.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Objects\Triggers and Switches\ImmediateReturn.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Objects\Triggers and Switches\SwitchTrigger.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Objects\Triggers and Switches\TriggerableObject.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Utility\Callback.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Utility\FSMState.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Utility\FiniteStateMachine.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Utility\Globals.cs" />
+     <Compile Include="Assets\Leap Motion\Leap Controller\Scripts\Utility\Messenger.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Hand States\LeapDrivingLeverState.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Hand States\LeapDrivingState.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Hand States\LeapHandleState.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Objects\LeapBoxingObject.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Objects\LeapFlashlightObject.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Objects\LeapGrenadeObject.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Objects\LeapHandleObject.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Objects\LeapSpeedLever.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Objects\LeapSteeringWheel.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Scenes\ATVRiding\BrakeDetection.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Scenes\ATVRiding\HandleScript.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Scenes\ATVRiding\ToggleCam.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Scenes\Bowling\DistanceReset.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Scenes\Bowling\HoverArea.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Scenes\Boxing\BagManager.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Scenes\Boxing\BagSpawner.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Scenes\Boxing\BreakingBag.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Scenes\Boxing\PunchingBag.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Scenes\Driving\FollowCam.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Scenes\Driving\WheelForce.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Scenes\Flying\LeapFly.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Scenes\Flying\Orbit.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Scenes\Flying\Thruster.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Scenes\Weapons\CameraLerp.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Scenes\Weapons\InstantiateObject.cs" />
+     <Compile Include="Assets\Leap Motion\Scenes Pack\Scripts\Leap Scenes\Weapons\Projectile.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\AssertionComponent.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\AssertionException.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Assertions.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\ActionBase.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\BoolComparer.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\ColliderComparer.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\ComparerBase.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\FloatComparer.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\GeneralComparer.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\IntComparer.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\IsRenderedByCamera.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\StringComparer.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\TransformComparer.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\ValueDoesNotChange.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\Vector2Comparer.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\Vector3Comparer.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\Vector4Comparer.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\Comparers\VectorComparerBase.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\InvalidPathException.cs" />
+     <Compile Include="Assets\UnityTestTools\Assertions\MemberResolver.cs" />
+     <Compile Include="Assets\UnityTestTools\Common\ITestResult.cs" />
+     <Compile Include="Assets\UnityTestTools\Common\ResultWriter\ResultSummarizer.cs" />
+     <Compile Include="Assets\UnityTestTools\Common\ResultWriter\StackTraceFilter.cs" />
+     <Compile Include="Assets\UnityTestTools\Common\ResultWriter\XmlResultWriter.cs" />
+     <Compile Include="Assets\UnityTestTools\Common\TestResultState.cs" />
+     <Compile Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Scripts\Animation\Escape\DelayedDeactivation.cs" />
+     <Compile Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Scripts\Animation\Escape\Eject.cs" />
+     <Compile Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Scripts\Animation\Escape\TheGreatActivator.cs" />
+     <Compile Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Scripts\Fx\GlowPlaneOrient.cs" />
+     <Compile Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Scripts\Fx\ReflectionFx.cs" />
+     <Compile Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Scripts\GameScore.cs" />
+     <Compile Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Scripts\Misc\DemoControl.cs" />
+     <Compile Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Scripts\Misc\GameOverGUI.cs" />
+     <Compile Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Scripts\Misc\InitLevelManager.cs" />
+     <Compile Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\CustomComponent.cs" />
+     <Compile Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\ThrowCustomException.cs" />
+     <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\ITestRunnerCallback.cs" />
+     <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\IntegrationTest.cs" />
+     <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\IntegrationTestsProvider.cs" />
+     <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\TestComponent.cs" />
+     <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\TestResult.cs" />
+     <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\TestResultRenderer.cs" />
+     <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\TestRunner.cs" />
+     <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\TestRunnerCallbackList.cs" />
+     <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestingAssets\CallTesting.cs" />
+     <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
+     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
+     <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\Fx\Cursor.shader" />
+     <None Include="Assets\UnityTestTools\LICENSE.txt" />
+     <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\Fx\ParticleAdditiveBlend.shader" />
+     <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\Fx\Additive.shader" />
+     <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularSmooth.shader" />
+     <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Resources\HeightDepthOfField.shader" />
+     <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Resources\BlurPassesForDof.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\BackgroundAndCharacters\Fallback.shader" />
+     <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\Fx\Multiply.shader" />
+     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\BackgroundAndCharacters\CharacterSelfIlluminationReflective.shader" />
+     <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Resources\ColoredNoise.shader" />
+     <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\BackgroundAndCharacters\PlanarRealtimeReflection.shader" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\BackgroundAndCharacters\ReflectiveBackgroundPlanar.shader" />
+     <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\BackgroundAndCharacters\EnemySelfIlluminationReflective.shader" />
+     <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\BackgroundAndCharacters\AngryInclude.cginc" />
+     <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Resources\MobileBloom.shader" />
+     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
+     <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\Fx\ParticleAdditive.shader" />
+     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
+     <None Include="Assets\UnityTestTools\changelog.txt" />
+     <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\Fx\LaserScope.shader" />
+     <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\BackgroundAndCharacters\SuperSimpleSelfIllumination.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
+     <None Include="Assets\UnityTestTools\Examples\IntegrationTestsFrameworkExamples\AngryBotsTests\Shaders\Fx\ParticleBlend.shader" />
+     <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
+ <Reference Include="LeapCSharp.NET3.5">
+ <HintPath>Assets\Plugins\LeapCSharp.NET3.5.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{FDE690F1-626F-FFA0-5754-E83120972A79}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{5120E47E-05CF-77CB-C2BE-2B2453982161}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
