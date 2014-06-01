@@ -48,7 +48,7 @@ function FixedUpdate () {
 	// distance meters behind the target
 	transform.position = target.position;
 	transform.position = currentRotation * Vector3.forward * distance;
- 
+ 	
 	// Set the height of the camera
 	transform.position.y = currentHeight;
  
