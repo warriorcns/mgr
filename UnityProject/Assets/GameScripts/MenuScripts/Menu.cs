@@ -15,8 +15,8 @@ public class Menu : MonoBehaviour {
 	Controller m_leapController;
 
 	//hand section
-	public LeapGameObject initialLeapObject; // Setting an initial leap object indicates a scene start in a specific state rather than default
-	public HandTypeBase handType;
+	//public LeapGameObject initialLeapObject; // Setting an initial leap object indicates a scene start in a specific state rather than default
+	//public HandTypeBase handType;
 	public bool isRightHand;
 
 
@@ -60,7 +60,7 @@ public class Menu : MonoBehaviour {
 		}
 	}
 
-	void OnGUI () {
+	/*void OnGUI () {
 		// Make a background box
 		GUI.Box(new Rect(y,10,200,500), "Main menu");
 
@@ -85,5 +85,5 @@ public class Menu : MonoBehaviour {
 		if(GUI.Button(new Rect(y+10,360,150,50), "CLOSE MENU")) {
 			//Application.LoadLevel(2);
 		}
-	}
+	}*/
 }
