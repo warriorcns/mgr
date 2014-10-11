@@ -11,7 +11,7 @@ public class SmoothIsometricFollow : MonoBehaviour {
 	private  float currentPosY;
 	private  float currentPosZ;
 
-	protected int camera_velocity = 10;
+	protected int camera_velocity = 20;
 	private float wantedHeight;
 	private float height = 5;
 	private float currentHeight;
