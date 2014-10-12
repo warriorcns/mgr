@@ -36,7 +36,7 @@ public class BallMovement : MonoBehaviour {
 			handX = mainHand.PalmPosition.x * 0.002f * speedFactor;
 			handZ = mainHand.PalmPosition.z * 0.002f * speedFactor;
 			//print(handZ.ToString());
-			print(handX.ToString());
+			//print(handX.ToString());
 			//GUI.Label(new UnityEngine.Rect(0,0,UnityEngine.Screen.width,UnityEngine.Screen.height),"ASDASD");
 			//myGUItext.text = "ASdsa";
 
