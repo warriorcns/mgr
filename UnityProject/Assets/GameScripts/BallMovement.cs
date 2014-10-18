@@ -39,17 +39,17 @@ public class BallMovement : MonoBehaviour {
 		{
 			mainHand = frame.Hands[0];
 
-			handX = mainHand.PalmPosition.x * 0.002f * speedFactor;
-			handZ = mainHand.PalmPosition.z * 0.002f * speedFactor;
-			//print(handZ.ToString());
-			//print(handX.ToString());
+			handX = mainHand.PalmPosition.x * 0.02f * speedFactor;
+			handZ = mainHand.PalmPosition.z * 0.02f * speedFactor;
+			print("hand z" + handZ.ToString());
+			print("hand x" + handX.ToString());
 			//GUI.Label(new UnityEngine.Rect(0,0,UnityEngine.Screen.width,UnityEngine.Screen.height),"ASDASD");
 			//myGUItext.text = "ASdsa";
 
-			gameObject.rigidbody.AddForce(_ballCam.transform.right * handX);
+			gameObject.rigidbody.AddForce(_ballCam.transform.right * handX );
 			gameObject.rigidbody.AddTorque(-_ballCam.transform.forward * SpeedPalla * handX);
 
-			gameObject.rigidbody.AddForce(-_ballCam.transform.forward * handZ);
+			gameObject.rigidbody.AddForce(-_ballCam.transform.forward * handZ );
 			gameObject.rigidbody.AddTorque(-_ballCam.transform.right * SpeedPalla * handZ);
 
 		}
