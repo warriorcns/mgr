@@ -22,12 +22,11 @@ var rotationDamping = 10.0;
 // Place the script in the Camera-Control group in the component menu
 @script AddComponentMenu("Camera-Control/Smooth Follow")
 
-
 function FixedUpdate () {
 	// Early out if we don't have a target
 	if (!target)
 		return;
- 
+
 	// Calculate the current rotation angles
 	wantedRotationAngle = target.eulerAngles.y;
 	wantedHeight = target.position.y + height;
@@ -47,7 +46,7 @@ function FixedUpdate () {
 	// Set the position of the camera on the x-z plane to:
 	// distance meters behind the target
 	transform.position = target.position;
-	transform.position = currentRotation * Vector3.forward * distance;
+	transform.position = currentRotation * Vector3.forward ;//* distance;
  	
 	// Set the height of the camera
 	transform.position.y = currentHeight;
