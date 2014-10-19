@@ -48,7 +48,8 @@
   <ItemGroup>
      <Compile Include="Assets\GameScripts\BallMovement.cs" />
      <Compile Include="Assets\GameScripts\MenuScripts\Menu.cs" />
-     <Compile Include="Assets\MoveObject.cs" />
+     <Compile Include="Assets\GameScripts\MoveObject.cs" />
+     <Compile Include="Assets\GameScripts\Teleport.cs" />
      <Compile Include="Assets\Resources\Button Parts\ButtonBehavior.cs" />
      <Compile Include="Assets\Scripts\FingerRenderer.cs" />
      <Compile Include="Assets\Scripts\LeapExtensions.cs" />

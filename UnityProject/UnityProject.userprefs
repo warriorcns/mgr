@@ -1,11 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SmoothIsometricFollow.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\GameScripts\BallMovement.cs">
     <Files>
-      <File FileName="Assets\GameScripts\BallMovement.cs" Line="82" Column="4" />
-      <File FileName="Assets\MoveObject.cs" Line="24" Column="11" />
-      <File FileName="Assets\SmoothIsometricFollow.cs" Line="89" Column="1" />
-      <File FileName="Assets\Standard Assets\Scripts\Camera Scripts\SmoothFollow.js" Line="44" Column="1" />
+      <File FileName="Assets\GameScripts\Teleport.cs" Line="35" Column="65" />
+      <File FileName="Assets\GameScripts\BallMovement.cs" Line="38" Column="31" />
+      <File FileName="Assets\GameScripts\MoveObject.cs" Line="60" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

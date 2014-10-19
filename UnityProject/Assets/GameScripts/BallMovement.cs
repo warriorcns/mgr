@@ -58,13 +58,13 @@ public class BallMovement : MonoBehaviour {
 		if(Input.GetButton("Vertical"))
 		{
 			gameObject.rigidbody.AddForce(_ballCam.transform.forward * SpeedPalla * Input.GetAxis("Vertical") * 0.8f);
-			gameObject.rigidbody.AddTorque(_ballCam.transform.right * SpeedPalla * Input.GetAxis("Vertical"));
+			gameObject.rigidbody.AddTorque(_ballCam.transform.right * SpeedPalla * Input.GetAxis("Vertical") * 0.8f);
 		}
 
 		if(Input.GetButton("Horizontal"))
 		{
 			gameObject.rigidbody.AddForce(_ballCam.transform.right * SpeedPalla * Input.GetAxis("Horizontal") * 0.8f);
-			gameObject.rigidbody.AddTorque(-_ballCam.transform.forward * SpeedPalla * Input.GetAxis("Horizontal"));
+			gameObject.rigidbody.AddTorque(-_ballCam.transform.forward * SpeedPalla * Input.GetAxis("Horizontal")* 0.8f);
 		}
 		/*
 		if(Input.GetKeyDown(KeyCode.Keypad6)){
